@@ -1,0 +1,164 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "email": "user@example.com",
+      "password": "user123",
+      "role": "customer"
+    },
+    {
+      "id": "fcfd",
+      "email": "arjunkamalasanan36@gmail.com",
+      "password": "123",
+      "role": "customer"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Electronics"
+    },
+    {
+      "id": "2",
+      "name": "Footwear"
+    },
+    {
+      "id": "3",
+      "name": "Fashion"
+    }
+  ],
+  "offers": [
+    {
+      "id": "1",
+      "title": "10% off on Electronics",
+      "discount": 10,
+      "categoryId": 1
+    },
+    {
+      "id": "2",
+      "title": "15% off on Fashion",
+      "discount": 15,
+      "categoryId": 3
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhone 14",
+      "price": 70000,
+      "categoryId": 1,
+      "image": "/images/iphone14.jpg",
+      "offerId": 1
+    },
+    {
+      "id": "2",
+      "name": "Samsung TV",
+      "price": 40000,
+      "categoryId": 1,
+      "image": "/images/samtv.jpg",
+      "offerId": 1
+    },
+    {
+      "id": "3",
+      "name": "Nike Shoes",
+      "price": 5500,
+      "categoryId": 2,
+      "image": "/images/nike.jpg",
+      "offerId": null
+    },
+    {
+      "id": "4",
+      "name": "Shirt",
+      "price": 1200,
+      "categoryId": 3,
+      "image": "/images/shirt.jpg",
+      "offerId": 2
+    },
+    {
+      "id": "5",
+      "name": "Dell Laptop",
+      "price": 60000,
+      "categoryId": 1,
+      "image": "/images/dell.jpg",
+      "offerId": 1
+    },
+    {
+      "id": "6",
+      "name": "Adidas Sneakers",
+      "price": 4500,
+      "categoryId": 2,
+      "image": "/images/adi.jpg",
+      "offerId": null
+    },
+    {
+      "id": "7",
+      "name": "Leather Jacket",
+      "price": 5500,
+      "categoryId": 3,
+      "image": "/images/jacket.jpg",
+      "offerId": 2
+    },
+    {
+      "id": "8",
+      "name": "Sony Headphones",
+      "price": 4000,
+      "categoryId": 1,
+      "image": "/images/head.jpg",
+      "offerId": 1
+    },
+    {
+      "id": "9",
+      "name": "Running Shoes",
+      "price": 3500,
+      "categoryId": 2,
+      "image": "/images/run.jpg",
+      "offerId": null
+    },
+    {
+      "id": "10",
+      "name": "Jeans",
+      "price": 1600,
+      "categoryId": 3,
+      "image": "/images/jeans.jpg",
+      "offerId": 2
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": 2,
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ],
+      "status": "Pending",
+      "total": 70000,
+      "createdAt": "2025-08-01T10:00:00.000Z"
+    },
+    {
+      "id": "6e26",
+      "userId": "fcfd",
+      "products": [
+        {
+          "productId": "1",
+          "quantity": 1
+        },
+        {
+          "productId": "2",
+          "quantity": 1
+        }
+      ],
+      "status": "Pending",
+      "total": 110000,
+      "createdAt": "2025-08-20T16:06:39.706Z"
+    }
+  ]
+}

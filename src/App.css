@@ -13,6 +13,116 @@
   }
 }
 
+.products-royal-container {
+  padding: 40px 0;
+  background: linear-gradient(135deg, #f2e9e4 0%, #cfcfcf 100%);
+  min-height: 100vh;
+}
+
+.royal-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(44, 55, 81, 0.10), 0 1.5px 2px #ccc;
+  overflow: hidden;
+  width: 100%;  /* full width inside column */
+  max-width: 320px; /* optional max width */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s;
+  border: 2px solid #e3d3c7;
+}
+
+.royal-card-img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  background: #f5ebe7;
+}
+
+.royal-card-body {
+  padding: 25px 22px 20px 22px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.royal-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #2c1e4a;
+  letter-spacing: 0.4px;
+}
+
+.royal-card-price {
+  font-size: 1.06rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #0074d9;
+}
+
+.royal-card-category {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #544;
+  font-weight: 500;
+}
+
+.royal-card-offer {
+  background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
+  color: #312a1c;
+  font-family: 'Georgia', serif;
+  font-size: 0.95em;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  align-self: flex-start;
+}
+
+.royal-card-buttons {
+  display: flex;
+  gap: 12px; /* spacing between buttons */
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.royal-card-buttons .btn {
+   flex: none; /* prevents buttons from stretching */
+  min-width: 110px;
+  font-size: 1rem;
+  border-radius: 24px;
+  font-weight: 600;
+  padding: 8px 16px;
+  box-shadow: 0 2px 6px rgba(95, 80, 255, 0.08);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  margin-bottom: 0; /* eliminates extra vertical spacing */
+}
+
+.royal-card-buttons .btn-primary {
+  background: linear-gradient(90deg, #3905d8ff, #3905d8ff);
+  color: #fff;
+}
+
+.royal-card-buttons .btn-outline-secondary,
+.royal-card-buttons .btn-secondary {
+  background: #f6f6f6;
+  color: #666;
+  border: 1.5px solid #d3d3e7;
+}
+
+.royal-card-buttons .btn-outline-secondary.active,
+.royal-card-buttons .btn-secondary.active {
+  background: #6c63ff;
+  color: #fff;
+  border: 1.5px solid #6c63ff;
+}
+
+
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
